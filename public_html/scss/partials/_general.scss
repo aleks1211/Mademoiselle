@@ -4,7 +4,8 @@ img{
 }
 
 html{
-    font-size: 10px; // 1 rem
+    font-size: 10px;
+    // 1 rem
 }
 
 body{
@@ -12,4 +13,12 @@ body{
     font-weight: $font-weight-normal;
 }
 
+/*main{
+    padding-top: 90px;
+}*/
 
+@media(min-width:576px){
+    main{
+        padding-top: 74px;
+    }
+}

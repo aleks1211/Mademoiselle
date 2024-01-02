@@ -1,0 +1,65 @@
+$beauty-text: #1E1E1E;
+
+.beauty-trends-section{
+    padding: 75px 0;
+
+    .beauty-content-date{
+        font-style: italic;
+    }
+
+    .beauty-trends-title{
+        font-family: $bodoni-moda;
+        font-size: 30px;
+        line-height: 45px;
+        letter-spacing: 5px;
+        color: $beauty-text;
+    }
+
+    a{
+        padding: 20px;
+        max-width: 313px;
+        margin: 0 auto;
+        color: $beauty-text;
+
+
+        .beauty-content-1{
+            font-family: $lato;
+            font-size: 16px;
+
+            line-height: 1.5em;
+            height: 3em;
+            overflow: hidden;
+        }
+    }
+}
+
+@media(min-width:576px){
+    .beauty-trends-section{
+        .beauty-trends-1{
+            a{
+                position: absolute;
+                //top: 50px;
+                bottom: 50px;
+                left: 0;
+                right: 0;
+            }
+        }
+    }
+}
+
+@media(min-width:768px){
+    .beauty-trends-section{
+        .beauty-trends{
+            position: relative;
+        }
+        .beauty-trends-1{
+            a{
+                position: absolute;
+                //top: 50px;
+                bottom: -50px;
+                left: 0;
+                right: 0;
+            }
+        }
+    }
+}

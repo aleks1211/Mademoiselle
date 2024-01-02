@@ -5,7 +5,7 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz@0,6..96;1,6..96&family=Lato:wght@300;400&display=swap");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -9397,6 +9397,17 @@ body {
   font-weight: 400;
 }
 
+/*main{
+    padding-top: 90px;
+}*/
+@media (min-width: 576px) {
+  main {
+    padding-top: 74px;
+  }
+}
+header .navbar-brand {
+  width: 200px;
+}
 header .navbar-toggler span {
   display: block;
   width: 30px;
@@ -9428,6 +9439,216 @@ header .navbar-nav a {
 @media (min-width: 1200px) {
   header .navbar-nav li {
     margin-left: 72px;
+  }
+}
+.lead-page-section {
+  padding: 218px 0 269px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.lead-page-section .lead-section-title {
+  color: #fff;
+  font-family: "Bodoni Moda";
+  display: inline-block;
+}
+
+@media (min-width: 0px) {
+  .lead-page-section .lead-section-title {
+    font-size: 3rem;
+    line-height: unset;
+    letter-spacing: 0;
+  }
+}
+@media (min-width: 992px) {
+  .lead-page-section .lead-section-title {
+    font-size: 6rem;
+    line-height: 8.4rem;
+    letter-spacing: 2rem;
+  }
+}
+.beauty-trends-section {
+  padding: 75px 0;
+}
+.beauty-trends-section .beauty-content-date {
+  font-style: italic;
+}
+.beauty-trends-section .beauty-trends-title {
+  font-family: "Bodoni Moda";
+  font-size: 30px;
+  line-height: 45px;
+  letter-spacing: 5px;
+  color: #1E1E1E;
+}
+.beauty-trends-section a {
+  padding: 20px;
+  max-width: 313px;
+  margin: 0 auto;
+  color: #1E1E1E;
+}
+.beauty-trends-section a .beauty-content-1 {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  height: 3em;
+  overflow: hidden;
+}
+
+@media (min-width: 576px) {
+  .beauty-trends-section .beauty-trends-1 a {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+  }
+}
+@media (min-width: 768px) {
+  .beauty-trends-section .beauty-trends {
+    position: relative;
+  }
+  .beauty-trends-section .beauty-trends-1 a {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+  }
+}
+.services h3 {
+  font-family: "Bodoni Moda";
+  font-size: 30px;
+  line-height: 45px;
+  letter-spacing: 5px;
+  color: #1E1E1E;
+}
+.services .services-content .services-description {
+  background-color: #F5F5F5;
+}
+.services .services-content .services-description:nth-child(even) {
+  background-color: #ECD9D9;
+}
+.services .services-content figure {
+  margin-bottom: 0;
+  padding: 0;
+}
+.services .services-content h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 36px;
+  line-height: 44px;
+  color: #1E1E1E;
+}
+.services .services-content .btn {
+  width: 166px;
+  padding: 10px;
+}
+
+@media (min-width: 320px) {
+  .services-content .services-description {
+    padding: 20px !important;
+  }
+  .services-content .services-description h2 {
+    font-size: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .services-content {
+    flex-direction: row !important;
+  }
+  .services-content .services-description {
+    padding: 0 50px;
+  }
+}
+.team-section h3 {
+  font-family: "Bodoni Moda";
+  font-size: 30px;
+  line-height: 45px;
+  letter-spacing: 5px;
+  color: #1E1E1E;
+}
+.team-section ul {
+  border: 1px solid #ECD9D9;
+}
+.team-section .team-member .team-member-name {
+  font-family: "Lato", sans-serif;
+  font-size: 30px;
+  margin-bottom: 35px;
+  margin-top: 15px;
+  color: #1E1E1E;
+}
+.team-section .team-member .team-member-content a {
+  color: #1E1E1E;
+  margin-bottom: 35px;
+  text-decoration: none;
+}
+.team-section .team-member .team-member-info {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 23px;
+  color: #1E1E1E;
+}
+.team-section .owl-theme .owl-dots .owl-dot span {
+  width: 8px;
+  height: 8px;
+  background: #ECD9D9;
+}
+
+@media (min-width: 320px) {
+  .team-section {
+    padding: 20px 0;
+  }
+}
+@media (min-width: 576px) {
+  .team-section {
+    padding: 30px 0;
+  }
+}
+@media (min-width: 768px) {
+  .team-section {
+    padding: 54px 0;
+  }
+  .team-section .team-member .team-member-content {
+    padding: 30px 0;
+  }
+}
+@media (min-width: 992px) {
+  .team-section .owl-carousel .owl-item img {
+    margin-left: 95px;
+    max-width: 80%;
+    padding: 54px 0;
+  }
+  .team-section .team-member .team-member-content {
+    margin-left: 107px;
+    margin-right: 80px;
+    padding: 85px 0;
+  }
+}
+footer .social a {
+  color: #ECD9D9;
+  font-size: 2.5rem;
+  transition: 1s linear;
+  margin: 0 5px;
+  text-decoration: none;
+}
+footer .social a:hover {
+  transform: rotate(360deg);
+}
+footer .copyright {
+  color: #1E1E1E;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 4.1rem;
+}
+footer .copyright a {
+  color: #1E1E1E;
+}
+
+@media (min-width: 320px) {
+  footer {
+    padding: 0;
+  }
+}
+@media (min-width: 576px) {
+  footer {
+    padding: 25px 0;
   }
 }
 

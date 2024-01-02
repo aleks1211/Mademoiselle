@@ -1,0 +1,58 @@
+$services-text:#1E1E1E;
+$servives-color:#F5F5F5;
+$services-color-1:#ECD9D9;
+
+.services{
+    h3{
+        font-family: $bodoni-moda;
+        font-size: 30px;
+        line-height: 45px;
+        letter-spacing: 5px;
+        color: $services-text;
+    }
+
+    .services-content{
+        .services-description{
+            background-color: $servives-color;
+           &:nth-child(even) {background-color: $services-color-1}
+
+        }
+        figure{
+            margin-bottom: 0;
+            padding: 0;
+        }
+        h2{
+            font-family: $lato;
+            font-size: 36px;
+            line-height: 44px;
+            color: $services-text;
+        }
+        .btn{
+            width: 166px;
+            padding: 10px;
+        }
+    }
+
+}
+
+
+@media(min-width:320px){
+    .services-content{
+        .services-description{
+            padding: 20px !important;
+            h2 {
+                font-size: 30px;
+            }
+        }
+    }
+}
+@media(min-width:768px){
+    .services-content{
+        flex-direction: row !important;
+
+        .services-description{
+            padding: 0 50px;
+
+        }
+    }
+}
