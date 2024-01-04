@@ -9452,12 +9452,28 @@ header .navbar-nav a {
   font-family: "Bodoni Moda";
   display: inline-block;
 }
+.lead-page-section .btn {
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  letter-spacing: 0.5px;
+  padding: 13px 30px;
+  width: 180px;
+  display: inline-block;
+  margin: 0 auto;
+}
 
 @media (min-width: 0px) {
   .lead-page-section .lead-section-title {
     font-size: 3rem;
     line-height: unset;
     letter-spacing: 0;
+  }
+  .lead-page-section .btn {
+    display: block;
+    padding: 13px;
+    width: 140px;
   }
 }
 @media (min-width: 992px) {
@@ -9467,11 +9483,30 @@ header .navbar-nav a {
     letter-spacing: 2rem;
   }
 }
+.pagination {
+  justify-content: center;
+}
+.pagination .page-item {
+  font-family: "Bodoni Moda";
+  color: #1E1E1E;
+  font-size: 16px;
+  line-height: 24px;
+}
+.pagination li a {
+  border: unset;
+  pointer-events: none;
+}
+
 .beauty-trends-section {
   padding: 75px 0;
 }
 .beauty-trends-section .beauty-content-date {
   font-style: italic;
+  font-family: "Bodoni Moda";
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  color: #1E1E1E;
 }
 .beauty-trends-section .beauty-trends-title {
   font-family: "Bodoni Moda";
@@ -9489,8 +9524,8 @@ header .navbar-nav a {
 .beauty-trends-section a .beauty-content-1 {
   font-family: "Lato", sans-serif;
   font-size: 16px;
-  line-height: 1.5em;
-  height: 3em;
+  line-height: 1.5rem;
+  height: 3rem;
   overflow: hidden;
 }
 
@@ -9505,13 +9540,25 @@ header .navbar-nav a {
 @media (min-width: 768px) {
   .beauty-trends-section .beauty-trends {
     position: relative;
+    margin-bottom: 88px;
   }
   .beauty-trends-section .beauty-trends-1 a {
     position: absolute;
     bottom: -50px;
     left: 0;
     right: 0;
+    z-index: 10;
   }
+  .beauty-trends-section .beauty-trends-1 a .beauty-content-date {
+    padding-top: 20px;
+  }
+  .beauty-trends-section .beauty-trends-1 a .beauty-content-1 {
+    padding-bottom: 43px;
+    line-height: 2rem;
+  }
+}
+.services {
+  padding: 56px 0;
 }
 .services h3 {
   font-family: "Bodoni Moda";
@@ -9555,6 +9602,31 @@ header .navbar-nav a {
   }
   .services-content .services-description {
     padding: 0 50px;
+  }
+}
+.service-content h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 44px;
+  line-height: 50px;
+  color: #1E1E1E;
+}
+.service-content p {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: left;
+  color: #1E1E1E;
+}
+
+@media (min-width: 320px) {
+  .service-content {
+    padding: 110px 0;
+  }
+}
+@media (min-width: 320px) {
+  .service-content {
+    padding: 150px 0;
   }
 }
 .team-section h3 {
@@ -9621,6 +9693,93 @@ header .navbar-nav a {
     padding: 85px 0;
   }
 }
+.blog-page-single-section .category {
+  font-family: "Bodoni Moda";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-align: left;
+  color: #1E1E1E;
+  margin-right: 15px;
+}
+.blog-page-single-section .date-published {
+  font-family: "Bodoni Moda";
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-align: left;
+  color: #1E1E1E;
+  font-style: italic;
+}
+.blog-page-single-section h1 {
+  font-family: "Lato", sans-serif;
+  font-size: 44px;
+  line-height: 50px;
+  text-align: left;
+  color: #1E1E1E;
+}
+.blog-page-single-section .blog-single-content {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: left;
+  color: #1E1E1E;
+}
+
+.blog-page-single-content {
+  padding: 41px 0;
+}
+.blog-page-single-content .blog-single-content-1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: justify;
+  color: #1E1E1E;
+}
+.blog-page-single-content .tag-title {
+  font-family: "Bodoni Moda";
+  font-size: 16px;
+  line-height: 27px;
+  text-align: left;
+  color: #1E1E1E;
+  font-style: italic;
+}
+.blog-page-single-content .tags {
+  font-family: "Bodoni Moda";
+  font-size: 16px;
+  line-height: 27px;
+  text-align: left;
+  color: #1E1E1E;
+}
+.blog-page-single-content .tags .btn {
+  width: 104px;
+}
+
+@media (min-width: 320px) {
+  .blog-page-single-section {
+    padding: 65px 0;
+  }
+}
+@media (min-width: 992px) {
+  .blog-page-single-section {
+    padding: 97px 0;
+  }
+}
+.info-section {
+  padding: 63px 0;
+  background-color: #ECD9D9;
+}
+.info-section p, .info-section a {
+  color: #1E1E1E;
+  font-weight: 300;
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  line-height: 2.5rem;
+}
+
 footer .social a {
   color: #ECD9D9;
   font-size: 2.5rem;
@@ -9649,6 +9808,60 @@ footer .copyright a {
 @media (min-width: 576px) {
   footer {
     padding: 25px 0;
+  }
+}
+.contact-section {
+  padding: 100px 0;
+}
+.contact-section h2 {
+  font-family: "Bodoni Moda";
+  font-size: 30px;
+  line-height: 45px;
+  letter-spacing: 5px;
+  text-align: left;
+  color: #1E1E1E;
+}
+.contact-section .form-control {
+  background-color: rgba(37, 61, 97, 0.02);
+  height: 50px !important;
+  line-height: 50px;
+  padding: 0 10px;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  line-height: 25px;
+  letter-spacing: -0.23px;
+  color: #1E1E1E;
+}
+.contact-section .btn {
+  border: 1px solid #1E1E1E;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.5px;
+  color: #1E1E1E;
+  display: block;
+  margin-top: 60px;
+}
+.contact-section textarea.form-control {
+  height: 155px !important;
+  resize: none;
+}
+.contact-section .error-msg * {
+  color: #dc3545;
+  font-size: 1.3rem;
+}
+.contact-section .contact-map iframe {
+  width: 100%;
+  height: 561px;
+}
+.contact-section .contact-map iframe:hover {
+  opacity: 45%;
+  color: #ECD9D9;
+}
+
+@media (min-width: 320px) {
+  .contact-section {
+    padding: 110px 0;
   }
 }
 

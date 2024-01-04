@@ -1,0 +1,89 @@
+$blog-text:#1E1E1E;
+
+
+.blog-page-single-section{
+    .category{
+        font-family: $bodoni-moda;
+        font-weight: $font-weight-bold;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-align: left;
+        color: $blog-text;
+        margin-right: 15px;
+    }
+
+    .date-published{
+        font-family: $bodoni-moda;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-align: left;
+        color: $blog-text;
+        font-style: italic;
+    }
+
+    h1{
+        font-family: $lato;
+        font-size: 44px;
+        line-height: 50px;
+        text-align: left;
+        color: $blog-text;
+    }
+
+    .blog-single-content{
+        font-family: $lato;
+        font-weight: $font-weight-light;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: left;
+        color: $blog-text;
+    }
+}
+
+.blog-page-single-content{
+    padding: 41px 0;
+    .blog-single-content-1{
+        font-family: $lato;
+        font-weight: $font-weight-light;
+        font-size: 18px;
+        line-height: 26px;
+        text-align: justify;
+        color: $blog-text;
+    }
+
+    .tag-title{
+        font-family: $bodoni-moda;
+        font-size: 16px;
+        line-height: 27px;
+        text-align: left;
+        color: $blog-text;
+        font-style: italic;
+    }
+
+    .tags{
+        font-family: $bodoni-moda;
+        font-size: 16px;
+        line-height: 27px;
+        text-align: left;
+        color: $blog-text;
+        
+        .btn{
+            width: 104px;
+        }
+    }
+}
+
+@media(min-width:320px){
+    .blog-page-single-section{
+        padding: 65px 0;
+
+    }
+}
+
+@media(min-width:992px){
+    .blog-page-single-section{
+        padding: 97px 0;
+
+    }
+}

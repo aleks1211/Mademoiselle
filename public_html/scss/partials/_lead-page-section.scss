@@ -11,6 +11,18 @@
         font-family: $bodoni-moda;
         display: inline-block;
     }
+
+    .btn{
+        color: $white;
+        font-family: $lato;
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+        letter-spacing: 0.5px;
+        padding: 13px 30px;
+        width: 180px;
+        display: inline-block;
+        margin: 0 auto;
+    }
 }
 
 
@@ -21,13 +33,19 @@
             line-height: unset;
             letter-spacing: 0;
         }
+
+        .btn{
+            display: block;
+            padding: 13px;
+            width: 140px;
+        }
     }
 }
 
 
 @media(min-width:992px){
     .lead-page-section{
-          .lead-section-title{
+        .lead-section-title{
             font-size: 6rem;
             line-height: 8.4rem;
             letter-spacing: 2rem;

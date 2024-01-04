@@ -3,6 +3,8 @@ $servives-color:#F5F5F5;
 $services-color-1:#ECD9D9;
 
 .services{
+    padding: 56px 0;
+
     h3{
         font-family: $bodoni-moda;
         font-size: 30px;
@@ -14,7 +16,9 @@ $services-color-1:#ECD9D9;
     .services-content{
         .services-description{
             background-color: $servives-color;
-           &:nth-child(even) {background-color: $services-color-1}
+            &:nth-child(even) {
+                background-color: $services-color-1
+            }
 
         }
         figure{
@@ -54,5 +58,41 @@ $services-color-1:#ECD9D9;
             padding: 0 50px;
 
         }
+    }
+}
+
+// service-content
+
+.service-content{
+    
+    h2{
+        font-family: $lato;
+        font-size: 44px;
+        line-height: 50px;
+        color: $services-text;
+    }
+    
+    p{
+        font-family: $lato;
+        font-weight: $font-weight-light;
+        font-size: 18px;
+        line-height: 26px;
+        text-align: left;
+        color: $services-text;
+    }
+
+}
+
+
+
+@media(min-width:320px){
+    .service-content{
+        padding: 110px 0;
+    }
+}
+
+@media(min-width:320px){
+    .service-content{
+        padding: 150px 0;
     }
 }
