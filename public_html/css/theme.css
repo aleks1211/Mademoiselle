@@ -9600,6 +9600,10 @@ header .navbar-nav a {
   .services-content {
     flex-direction: row !important;
   }
+  .services-content .btn {
+    position: relative;
+    top: 35px;
+  }
   .services-content .services-description {
     padding: 0 50px;
   }
@@ -9832,7 +9836,7 @@ footer .copyright a {
   letter-spacing: -0.23px;
   color: #1E1E1E;
 }
-.contact-section .btn {
+.contact-section .btn-contact {
   border: 1px solid #1E1E1E;
   font-family: "Lato", sans-serif;
   font-size: 14px;

@@ -47,13 +47,18 @@ $services-color-1:#ECD9D9;
             h2 {
                 font-size: 30px;
             }
+
+
         }
     }
 }
 @media(min-width:768px){
     .services-content{
         flex-direction: row !important;
-
+        .btn{
+            position: relative;
+            top: 35px;
+        }
         .services-description{
             padding: 0 50px;
 
@@ -64,14 +69,14 @@ $services-color-1:#ECD9D9;
 // service-content
 
 .service-content{
-    
+
     h2{
         font-family: $lato;
         font-size: 44px;
         line-height: 50px;
         color: $services-text;
     }
-    
+
     p{
         font-family: $lato;
         font-weight: $font-weight-light;
