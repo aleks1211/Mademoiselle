@@ -1,0 +1,51 @@
+$about-text: #1E1E1E;
+
+.beauty-trends-section{
+    .about-title{
+        font-family: $lato;
+        font-size: 44px;
+        line-height: 50px;
+        text-align: left;
+        color: $about-text;
+    }
+    .about-content-1{
+        font-family: $lato;
+        font-weight: $font-weight-light;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: left;
+        color: $about-text;
+    }
+}
+    .beauty-about-aside-content {
+    .search {
+    input {
+        height: 60px;
+        width: 100%;
+        padding: 20px;
+        border: 1px solid #1e1e1e;
+    }
+    i {
+       position: absolute;
+        top: 23px;
+        right: 17px;
+        }
+    }
+    article {
+        &:first-of-type {
+             margin-top: 40px;
+        }
+    }
+}
+@media (min-width: 768px) {
+ article {
+
+        a {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+  right: 0;
+        }
+    }
+
+}
